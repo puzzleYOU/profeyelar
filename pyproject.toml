@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "profeyelar"
+version = "1.0.0"
+description = "UI-based tool for project end-to-end profiling"
+dependencies = [
+    "setuptools",
+    "requests",
+    "memray"
+]
+readme = "README.md"
+authors = [
+    {name = "puzzleYOU GmbH"}
+]
+license = "MIT"
+classifiers = []
