@@ -135,8 +135,9 @@ def _initialize_container(
 
 
 def _wait_until_container_is_up(parsed_settings: dict):
+    max_tries = int(parsed_settings.get("profiling__retry_count", 0)) or 30
     tries = 0
-    while tries <= 30:
+    while tries <= max_tries:
         with suppress(Exception):
             resp = requests.get(
                 urljoin(
