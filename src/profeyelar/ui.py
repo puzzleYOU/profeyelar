@@ -7,7 +7,7 @@ from operator import methodcaller
 from threading import Thread
 from tkinter.scrolledtext import ScrolledText
 
-from preferences import ProfilingPreferences
+from profeyelar.preferences import ProfilingPreferences
 
 
 class InvalidTextInputError(Exception):
