@@ -99,7 +99,7 @@ class MainFrame(tkinter.Frame):
     def _start_profiling_with_selected_preferences(self):
         try:
             prefs = self.get_selected_preferences()
-            from launcher import start_profiling
+            from profeyelar.launcher import start_profiling
 
             th = Thread(
                 target=start_profiling,
