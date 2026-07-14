@@ -11,9 +11,10 @@ from urllib.parse import urljoin
 from uuid import uuid4
 
 import requests
-from preferences import ProfilingPreferences
-from profiling import CProfileContext, TracemallocContext
-from ui import MainFrame
+
+from profeyelar.preferences import ProfilingPreferences
+from profeyelar.profiling import CProfileContext, TracemallocContext
+from profeyelar.ui import MainFrame
 
 
 def is_service_running(name: str) -> bool:

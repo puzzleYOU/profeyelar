@@ -8,9 +8,10 @@ import json
 from os.path import isfile
 from tkinter import Tk
 
-from parsing import (ConfigurationParseError, EnvironmentVariableNotFoundError,
-                     parse_setting)
-from ui import MainFrame
+from profeyelar.parsing import (ConfigurationParseError,
+                                EnvironmentVariableNotFoundError,
+                                parse_setting)
+from profeyelar.ui import MainFrame
 
 
 def parse_args():
