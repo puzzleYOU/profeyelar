@@ -44,7 +44,8 @@ You can reference available environment variables in `string` values of the conf
         "api_docs_url": null
     },
     "profiling": {
-        "output_directory": "i/am/a/directory/hehe/"
+        "output_directory": "i/am/a/directory/hehe/",
+        "retry_count": 60
     }
 }
 ```
