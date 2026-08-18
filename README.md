@@ -58,3 +58,9 @@ Profeyelar can generate up to 3 different types of profile result files, which c
 
 ## Note regarding Gevent
 As of time of writing, running memray on gunicorn based servers with `GeventWorker` workers results in an error when the server is stopped. We discovered this by chance when we checked the container logs before Profeyelar had finished the container shutdown process. The error does not seem to prevent The Professor from saving the profiling results and shutting the container down successfully. However, it is good to be aware of this behavior nonetheless. We did not encounter a similar error when running a gunicorn based server with Gthread (`ThreadWorker` workers) instead.
+
+## Development on profeyelar
+
+### Updating dependencies
+
+Review the fixed major versions in pyproject.toml for updates and check required changes.
