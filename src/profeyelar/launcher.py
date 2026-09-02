@@ -84,6 +84,7 @@ def start_profiling(
             f"Please stop {service_name} first. The Professor takes care"
             " of starting it with the expected environment settings."
         )
+        ui.unfreeze()
         return
 
     container = _initialize_container(parsed_settings, prefs)
